@@ -42,6 +42,6 @@ cloudinary.config({
 
 
 
-app.listen(PORT, IP_ADDRESS, () => {
-  console.log(`Server is running on http://${IP_ADDRESS}:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
