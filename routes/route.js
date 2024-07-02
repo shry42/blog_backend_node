@@ -20,6 +20,6 @@ router.get('/api/getAllCategory',validUser.validateToken,getAllCategory)
 router.post('/api/addBlogs', fileUpload.singleFileUpload,validUser.validateToken,addBlogs)
 router.put('/api/updateBlog',fileUpload.singleFileUpload,validUser.validateToken,updateBlog)
 router.put('/api/deleteBlog',validUser.validateToken,deleteBlog)
-router.get('/api/getAllBlogs',validUser.validateToken,getAllBlogs)
+router.get('/api/getAllBlogs',getAllBlogs)
 
 module.exports = router;
